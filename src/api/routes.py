@@ -5,8 +5,9 @@ from ..scrapers.scraper_factory import ScraperFactory
 from ..notifications.console_strategy import ConsoleNotification
 from ..core.auth import token_required
 from ..core.config import settings
-router = APIRouter()
 
+
+router = APIRouter()
 
 def verify_token(x_token: str = Header(...)):
     if x_token != settings.SECRET_TOKEN:

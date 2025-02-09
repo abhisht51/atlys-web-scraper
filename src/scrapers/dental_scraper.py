@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from ..models.products import Product
 from ..core.config import settings
-from ..notifications.notification_strategy import NotificationStrategy
+from ..notifications.notifcation_strategy import NotificationStrategy
 from ..notifications.console_strategy import ConsoleNotification
 from ..storage.storage_strategy import StorageStrategy
 import os
